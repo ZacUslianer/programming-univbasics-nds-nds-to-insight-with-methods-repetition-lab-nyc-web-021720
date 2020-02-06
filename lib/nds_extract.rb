@@ -36,14 +36,17 @@ def list_of_directors(source)
   end
 
 def total_gross(source)
-binding.pry
+
+  directors_names = list_of_directors(source)
+  movie_totals = directors_totals(source)
   grand_total = 0 
   row_index = 0 
-  while row_index < source.length
-  grand_total += directors_totals(source)
-  
+ 
+  while row_index < directors_names.length do   
+  director_name = directors_names[row_index]
+  binding.pry
    row_index += 1
- end
+  end
   # Write this implementation
   #
   # Should use methods:
