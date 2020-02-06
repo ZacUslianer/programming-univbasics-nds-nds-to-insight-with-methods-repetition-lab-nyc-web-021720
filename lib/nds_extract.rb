@@ -30,6 +30,7 @@ def list_of_directors(source)
   while index < source.count do 
     puts source[index][:name]
     index += 1 
+    binding.pry
     end
     
   end
