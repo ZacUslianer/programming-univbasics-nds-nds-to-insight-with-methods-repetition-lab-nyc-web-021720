@@ -39,9 +39,9 @@ def total_gross(source)
   row_index = 0 
   while row_index < source.length
   grand_total += directors_totals(source)
-  name_index = 0 
-    while
-  row_index += 1
+  binding.pry
+   row_index += 1
+ end
   # Write this implementation
   #
   # Should use methods:
