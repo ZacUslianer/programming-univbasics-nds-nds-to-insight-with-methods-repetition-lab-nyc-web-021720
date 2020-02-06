@@ -36,6 +36,7 @@ def list_of_directors(source)
   end
 
 def total_gross(source)
+binding.pry
   grand_total = 0 
   row_index = 0 
   while row_index < source.length
