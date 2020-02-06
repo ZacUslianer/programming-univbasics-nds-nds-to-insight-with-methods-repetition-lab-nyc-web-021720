@@ -43,9 +43,10 @@ def total_gross(source)
   row_index = 0 
  
   while row_index < directors_names.length do   
-  director_name = directors_names[row_index]
-  binding.pry
-   row_index += 1
+    director_name = directors_names[row_index]
+    grand_total += movie_totals[director_name]
+  
+    row_index += 1
   end
   # Write this implementation
   #
