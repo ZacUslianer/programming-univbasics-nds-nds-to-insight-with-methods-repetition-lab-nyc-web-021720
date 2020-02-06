@@ -26,13 +26,13 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  index = 0 
+  index = 0
+  name_array = []
   while index < source.count do 
-    puts source[index][:name]
+   name_array << source[index][:name]
     index += 1 
-    binding.pry
     end
-    
+    name_array
   end
 
 def total_gross(source)
